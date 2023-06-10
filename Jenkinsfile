@@ -23,8 +23,8 @@ pipeline {
     stage('Execute') {
         steps {
             sh 'sudo kubectl version'
-            sh 'sudo kubectl apply -f deployment.yaml'
-            sh 'sudo kubectl apply -f service.yaml'
+            sh 'sudo kubectl apply -f deployment.yml'
+            sh 'sudo kubectl apply -f service.yml'
         }
     }
   }
